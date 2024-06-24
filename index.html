@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KULSUMIATI</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>FOR U BABE</h1>
+    <div class="heart"></div>
+    <div class="heart" style="animation-delay: 1s; left: 20%; top: 20%;"></div>
+    <div class="heart" style="animation-delay: 2s; left: 50%; top: 40%;"></div>
+    <div class="heart" style="animation-delay: 3s; left: 80%; top: 60%;"></div>
+    <script>
+        var hearts = [];
+        for (var i = 0; i < 20; i++) {
+            var heart = document.createElement('div');
+            heart.className = 'heart';
+            heart.style.left = Math.random() * 100 + 'vw';
+            heart.style.top = Math.random() * 100 + 'vh';
+            heart.style.animationDelay = Math.random() * 5 + 's';
+            document.body.appendChild(heart);
+            hearts.push(heart);
+        }
+    </script>
+    <marquee scrollamount="4" width="100%" behavior="alternate">
+        <font color="white">[ </font><font face="Abel" size="6px" color="#00BFFF">haii sayangg, sehat sehat yaaa sayanggg, terus bareng akuu, i love u kulsum nya akuuu. jangan aneh aneh disana yaaa kita kan jauhh hehe</font><font color="white"> ]</font>
+    </marquee>
+</body>
+</html>
